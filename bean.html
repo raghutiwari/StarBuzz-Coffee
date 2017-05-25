@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bean.css" type="text/css">
+	<title>The StarBuzz Bean Machine</title>
+	</head>
+
+	<body>
+    <header class="top">
+      <img src="images/header2.gif" alt="Starbuzz Coffee header image">
+      <img id="headerSlogan" src="images/headerSlogan.gif" alt= "providing all the caffeine you need to power your life. jsut drink it.">
+    </header>
+	<h1>The StarBuzz Bean Machine</h1>
+	<h1>Fill out the form below and click "order now" to order</h1>
+
+	<form action="http://starbuzzcoffee.com/processorder.php" method="GET">
+	<div class="tableRow">
+	<p>
+	Choose your beans:
+	</p>
+	<p>
+	<select name="beans">
+		<option value="House Blend">House Blend</option>
+		<option value="Bolivia">Shade Grown Bolivia Supremo</option>
+		<option value="Guatemala">Organic Guatemala</option>
+		<option value="Kenya">Kenya</option>
+	</select>
+	</p>
+	</div>
+	<div class="tableRow">
+	<p> Type:</p>
+	<p>
+	<input type="radio" name="beantype" value="whole" required>Whole bean<br>
+	<input type="radio" name="beantype" value="ground" checked>Ground
+	</p>
+	</div>
+	<div class="tableRow">
+	<p>
+	 Extras:
+	 </p>
+	 <p>
+	 <input type="checkbox" name="extras[]" value="giftwrap">Gift Wrap<br>
+	 <input type="checkbox" name="extras[]" value="catalog" checked>Include catalog with order
+ 	</p>
+ 	</div>
+ 	<div class="tableRow">
+	<p>
+	 Number of bags: 
+	</p>
+	<p>
+	<input type="number" name="bags" min="1" max="10">
+	</p>
+	</div>
+	<div class="tableRow">
+	<p>
+	 Must arrive by date: 
+	</p>
+	<p>
+	<input type="date" name="date">
+	</p>
+	</div>
+	<div class="tableRow">
+ 	<p class="heading">Ship to: 
+ 	</p>
+ 	<p></p>
+ 	</div>
+ 	<div class="tableRow">
+ 	<p>	Name: </p> <p> <input type="text" name="name" required></p>
+ 	</div>
+ 	<div class="tableRow">
+	<p>Address:</p><p><input type="text" name="address" required></p>
+	</div>
+	<div class="tableRow">
+	<p>City:</p> <p>  <input type="text" name="city" required></p>
+	</div>
+		<div class="tableRow">
+	<p>State: </p><p> <input type="text" name="state" required></p>
+	</div>
+		<div class="tableRow">
+	<p>Zip: </p> <p>  <input type="text" name="zip" required></p>
+	</div>
+		<div class="tableRow">
+	<p>Phone:</p>  <p><input type="tel"  name="phone" required></p>
+	</div>
+	<div class="tableRow">
+	<p>
+	Customer Comments: 
+	</p>
+	<p>
+	<textarea name="comments" rows="10" cols="48"></textarea>
+	</p>
+	</div>
+	<div class="tableRow">
+	<p></p>
+	<p>
+	<input type="submit" value="Order Now"> <a id="cancel" href="index.html" > <input type="button" name="back" value="Cancel Order"></a>
+	</p>
+	</div>
+	</form>
+	<footer>
+      &copy; 2012, Starbuzz Coffee
+      <br>
+      All trademarks and registered trademarks appearing on 
+      this site are the property of their respective owners.
+    </footer>
+	</body>
+</html>
